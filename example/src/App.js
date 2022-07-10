@@ -1,9 +1,11 @@
 import React from 'react'
 
-import { MyButton } from 'iplan-library-sample'
+import { MyForm } from 'iplan-library-sample'
 
 const App = () => {
-  return <MyButton label="Create React Library Example 😄" />
+  return <div style={{ "margin": "10px" }}>
+    <MyForm onSubmit={data => alert(JSON.stringify(data))} />
+  </div>
 }
 
 export default App
